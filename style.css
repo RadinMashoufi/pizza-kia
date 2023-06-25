@@ -1,95 +1,108 @@
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: lobster;
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: font1;
-  src: url(./fonts/RobotoCondensed-Bold.ttf);
-}
-@font-face {
-  font-family: font2;
-  src: url(./fonts/Lobster-Regular.ttf);
-}
-@font-face {
-  font-family: font3;
-  src: url(./fonts/RobotoCondensed-Light.ttf);
-}
 body{
-  background-image: url(./images/background.png);
+  background: url(./images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: font1;
+  font-family: roboto;
+  height: 100vh;
 }
-.name{
+.page{
+  margin-inline: 6rem;
+  margin-top: 4rem;
+}
+.top{
+  display: flex;
+}
+.top .tabs{
+  flex: 1;
+}
+.top h1{
+  flex: 1;
+}
+.top .tabs ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .tabs ul a{
+  text-decoration: none;
+  font-family: regular;
+  font-size: 1.3rem;
+  color: rgb(170, 170, 170);
+}
+.top h1{
   color: white;
+  font-size: 2rem;
 }
-.tabs{
-  color: rgb(255, 255, 255);
-  font-family: font3;
-  font-size: 14px;
+.top h1 span{
+  color: #ED9B1C;
 }
-.title{
-  font-family: font1;
+.title h1{
   color: white;
-  font-size: 30px;
+  font-size: 5rem;
 }
-.subtitle{
-  color: rgb(255, 255, 255);
-  font-family: font3;
-  font-size: 15px;
+.title h1 span{
+  color: #ED9B1C  ;
 }
-button{
-  width: 250px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.0);
-  font-family: font1;
-  font-size: 20px;
+.title p{
+  color: white;
+  font-family: regular;
+  font-size: 0.9rem;
+  margin-block: 3rem;
+}
+.content{
+  margin-block: 7.5rem;
+  gap: 12rem;
+  display: flex;
+}
+.title a{
+  text-decoration: none;
   color: #ED9B1C;
-  border: 2px #ED9B1C solid;
+  font-family: regular;
+  border: 3px #ED9B1C solid;
+  padding: 5px 40px;
+  font-size: 1.5rem;
 }
-.name{
-  position: absolute;
-  top: 30px;
-  left: 90px;
+.form{
+  border: 3px #ED9B1C solid;
+  background-color: rgba(34, 0, 0, 0.7);
 }
-.home{
-  position: absolute;
-  top: 30px;
-  left: 800px;
+.form img{
+  width: 2rem;
 }
-.about{
-  position: absolute;
-  top: 30px;
-  left: 1000px;
+.form h1{
+  font-family: lobster;
+  background-color: #ED9B1C;
+  padding: 5px 70px;
+  font-size: 1.75rem;
+  text-align: center;
 }
-.contact{
-  position: absolute;
-  top: 30px;
-  left: 1200px;
+.form a{
+  background-color: #ED9B1C;
+  text-decoration: none;
+  color: #330000;
+  font-size: 1.75rem;
+  font-family: regular;
+  padding: 5px 95px;
+  margin: 1.5rem;
 }
-.menu{
-  position: absolute;
-  top: 30px;
-  left: 1400px;
-}
-.title{
-  position: absolute;
-  top: 200px;
-  left: 90px;
-  font-size: 50px;
-}
-.subtitle{
-  position: absolute;
-  top: 350px;
-  left: 90px;
-}
-.button{
-  position: absolute;
-  top: 475px;
-  left: 90px;
-  height: 100px;
-}
-.name{
-  color: #ED9B1C;
+.form span{
+  margin-top: 20rem;
+  display: flex;
 }
