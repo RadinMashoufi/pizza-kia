@@ -16,11 +16,12 @@
   box-sizing: border-box;
 }
 body{
-  background: url(./images/background.png);
+  background: linear-gradient(rgb(51, 0, 0, 1), transparent), url(./images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: roboto;
   height: 100vh;
+  overflow: hidden;
 }
 .page{
   margin-inline: 6rem;
@@ -83,9 +84,6 @@ body{
   border: 3px #ED9B1C solid;
   background-color: rgba(34, 0, 0, 0.7);
 }
-.form img{
-  width: 2rem;
-}
 .form h1{
   font-family: lobster;
   background-color: #ED9B1C;
@@ -93,7 +91,7 @@ body{
   font-size: 1.75rem;
   text-align: center;
 }
-.form a{
+.form button{
   background-color: #ED9B1C;
   text-decoration: none;
   color: #330000;
@@ -105,4 +103,7 @@ body{
 .form span{
   margin-top: 20rem;
   display: flex;
+}
+.form button img{
+  width: 1.5rem;
 }
